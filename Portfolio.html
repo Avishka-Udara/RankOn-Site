@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>RankOn</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Chain App Dev">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html">Home</a></li>
+              <li class="scroll-to-section"><a href="Services.html">Services</a></li>
+              <li class="scroll-to-section"><a href="About.html">About</a></li>
+              <li class="scroll-to-section"><a href="Portfolio.html" class="active">Portfolio</a></li>
+              <li class="scroll-to-section"><a href="Contact.html">Contact</a></li>
+              <li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <!-- ***** SIGN IN ***** -->
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+
+                </a>
+
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+  <!-- ***** SIGN IN END ***** -->
+
+
+<div id="services" class="services section">
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeIn">
+            <h4>Check What <em>The Clients Say</em> About Our App Dev</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active wow fadeInUp">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12 ">
+                            <h4>David Martino</h4>
+                            <span class="date">30 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Degital Marketing</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb wow fadeInUp">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Yi Ling Eileen Wong</h4>
+                            <span class="date">29 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Digital Business</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb wow fadeInUp">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Carmen Wong</h4>
+                            <span class="date">27 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">SEO</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb wow fadeInUp">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Lucy Chng</h4>
+                            <span class="date">5 July 2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Digital Marketing</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">3.9</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb wow fadeInUp">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Mark Amber Do</h4>
+                            <span class="date">8 july 2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Web Development</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb wow fadeInUp">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Heroes of Digital believes in client success and they have an array of tools and expertise to make that happen, from digital marketing to SEO, to website design. Best of all, they have a dedicated and responsive team that is open to ideas! Truly grateful for all the efforts they've put into making our company a success today!”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image2.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>David Martino</h4>
+                                  <span>CEO of David Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“I would usually not write a compliment but i have to give the team my 2 thumbs up for constantly solving our digital marketing woes. RankOn not only took care of 1 corporate account of ours, but we are more than pleased to entrust all our 4 companies to them, with the latest addition of a F&B establishment.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image4.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Yi Ling Eileen Wong</h4>
+                                  <span>DERECTOR of DecorLand</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Awesome experience working with the team at RankOn! They are always very responsive and continuously gives us suggestions to improve our online presence in the F&B industry. A great help as they managed our SEO and SEM really well and we do not have to worry. Definitely will recommend them!”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image5.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Carmen Wong</h4>
+                                  <span>Marketing Executive of RUSEL</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“I used to juggle optimizing facebook campaigns on top of my workload, after we partnered RankOn, they have been a great help with running the Facebook campaigns and I am able to shift my focus to strategy and outcome.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Lucy Chng</h4>
+                                  <span>DERECTOR, ELEMENTS Welness</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Very professional and dedicated team. Lifting lots of burden off our shoulders. Would strongly recommend to other SMEs in Singapore.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image3.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Mark Am</h4>
+                                  <span>CTO, Amber Do Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery -->
+<div id="services" class="services section">
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeIn">
+            <h4>Check Out some of <em>Our work samples</em> for client requirements.</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="assets/images/galary1.png"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+      
+          <img
+            src="assets/images/galary2.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+        </div>
+      
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="assets/images/galary3.png"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+      
+          <img
+            src="assets/images/galary4.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+        </div>
+      
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="assets/images/galary5.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+      
+          <img
+            src="assets/images/galary6.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="assets/images/galary7.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+      
+          <img
+            src="assets/images/galary8.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="assets/images/galary10.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+      
+          <img
+            src="assets/images/galary9.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 wow fadeInUp"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery -->
+
+<footer id="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 ">
+        <div class="section-heading wow fadeInUp">
+          <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-lg-3 ">
+        <form id="search" action="#" method="GET">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 wow fadeInUp">
+              <fieldset>
+                <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+              </fieldset>
+            </div>
+            <div class="col-lg-6 col-sm-6 wow fadeInUp">
+              <fieldset>
+                <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row col-lg-12">
+      <div class="col-lg-1">
+        </div>
+      <div class="col-lg-4 wow fadeInUp">
+        <div class="footer-widget">
+          <h4 ><a href="Contact.html" class="text-light">Contact Us</a></h4>
+          <p>275/B, Galle rd, Colombo 10</p>
+          <p><a href="#">011-511 22 33</a></p>
+          <p><a href="#">info@RankOn.com</a></p>
+        </div>
+      </div>
+      <div class="col-lg-4 wow fadeInUp">
+        <div class="footer-widget">
+          <h4><a href="About.html" class="text-light">About Us</a></h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-widget wow fadeInUp">
+          <h4><a href="About.html" class="text-light">Useful Links</a></h4>
+          <ul>
+            <li><i class="fa fa-facebook"></i><a href="#">  &nbsp;&nbsp;&nbsp;Facebook</a></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="#">  &nbsp;&nbsp;&nbsp;Twitter</a></li>
+            <li><i class="fa fa-linkedin" aria-hidden="true"></i><a href="#">  &nbsp;&nbsp;&nbsp;Linkedin</a></li>
+            <li><i class="fa fa-github-alt" aria-hidden="true"></i><a href="#">  &nbsp;&nbsp;&nbsp;Github</a></li>
+            <li><i class="fa fa-youtube-play" aria-hidden="true"></i><a href="#">  &nbsp;&nbsp;&nbsp;Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+     
+      <div class="col-lg-12">
+        <div class="copyright-text wow fadeInUp">
+          <p>Copyright © 2022 RankUp Company. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
